@@ -5,7 +5,7 @@
   "main": "server.js",
   "type": "module",
   "scripts": {
-    "start": "NODE_OPTIONS='--experimental-specifier-resolution=node' node server.js",
+    "start": "node --experimental-modules --es-module-specifier-resolution=node server.js",
     "client-install":"cd client && npm install",
     "client-build":"cd client && npm run build",
     "build":"npm run client-install && npm run client-build"
